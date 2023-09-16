@@ -1,6 +1,6 @@
 properties:
-    GoalsFunction: AVERAGE
-    SeriesColor: cyan
+    GoalsFunction: SUM 
+    SeriesColor: red
 global:
     mode: dark
     settings:
@@ -184,7 +184,7 @@ pages:
                                           - source: Day
                                           - source: Total Goals
                                             column: Goals
-                                            function: ${GoalsFunction}
+                                            function: "${GoalsFunction}"
                 - span: 6
                   components:
                       - displayer:
@@ -206,7 +206,7 @@ pages:
                                       functions:
                                           - source: Stadium Name
                                           - source: Total Goals
-                                            function: ${GoalsFunction}
+                                            function: "${GoalsFunction}"
                                             column: Goals
 
           - properties:
